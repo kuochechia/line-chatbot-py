@@ -4,7 +4,7 @@ services:
   env: python
   repo: https://github.com/kuochechia/line-chatbot-py.git
   buildCommand: pip install gunicorn -r requirements.txt
-  startCommand: gunicorn SharpLineBot.wsgi:application
+  startCommand: gunicorn app.wsgi:application
   plan: free
   autoDeploy: false
   envVars:
